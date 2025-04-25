@@ -100,3 +100,6 @@ Day 5: Analytics & Future Planning
 
 Monitor user engagement and gather feedback on platform usage.
 Plan future updates (e.g., advanced AI recommendations, subscription models, more doctor consultations).
+
+## Netlify Link -
+https://trimedi.netlify.app/
