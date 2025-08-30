@@ -10,3 +10,13 @@ export const POST = async (req, res) => {
         return res.status(500).json({error : err});
     }
 }
+
+export const GET = async (req, res) => {
+    try {
+        const users = await User.find();
+        return res.status(200).json(users);
+    } catch(err){
+        console.log(err);
+        return res.status(500).json({error : err});
+    }
+}

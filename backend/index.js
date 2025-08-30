@@ -11,17 +11,17 @@ app.use(cors())
 
 
 const PORT = process.env.PORT || 3000
-// const URL = process.env.URL
+const URL = process.env.URL
 
-// mongoose.connect(URL)
-//   .then(() => {
-//     console.log("Database Connected!");
-//     startServer();
-//   })
-//   .catch((err) => {
-//     console.error("Database Connection Failed:", err.message);
-//     process.exit(1);
-//   });
+mongoose.connect(URL)
+  .then(() => {
+    console.log("Database Connected!");
+    startServer();
+  })
+  .catch((err) => {
+    console.error("Database Connection Failed:", err.message);
+    process.exit(1);
+  });
 
 
 app.get('/api/message', (req, res) => {
