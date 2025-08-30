@@ -20,3 +20,17 @@ export const GET = async (req, res) => {
         return res.status(500).json({error : err});
     }
 }
+
+export const PUT = async (req, res) => {
+    try {
+        const { id } = req.body;
+        const updatedUser = await User.findByIdAndUpdate(id, req.body, { new: true });
+        if (!updatedUser) {
+            return res.status(404).json({ error: 'User not found' });
+        }
+        return res.status(200).json(updatedUser);
+    } catch(err){
+        console.log(err);
+        return res.status(500).json({error : err});
+    }
+}
