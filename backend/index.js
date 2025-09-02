@@ -16,7 +16,6 @@ const URL = process.env.URL
 mongoose.connect(URL)
   .then(() => {
     console.log("Database Connected!");
-    startServer();
   })
   .catch((err) => {
     console.error("Database Connection Failed:", err.message);
