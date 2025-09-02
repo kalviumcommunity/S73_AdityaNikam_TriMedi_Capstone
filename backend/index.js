@@ -23,7 +23,7 @@ mongoose.connect(URL)
   });
 
 
-app.get('/api/message', (req, res) => {
+app.get('/', (req, res) => {
   res.json({ message: 'Hello from TriMedi Backend!' });
 });
 
