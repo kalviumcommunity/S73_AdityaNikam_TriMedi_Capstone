@@ -22,7 +22,6 @@ mongoose.connect(URL)
     process.exit(1);
   });
 
-
 app.get('/api/message', (req, res) => {
   res.json({ message: 'Hello from TriMedi Backend!' });
 });
