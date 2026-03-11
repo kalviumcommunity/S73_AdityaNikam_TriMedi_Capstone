@@ -103,3 +103,6 @@ Plan future updates (e.g., advanced AI recommendations, subscription models, mor
 
 ## Netlify Link -
 https://trimedi.netlify.app/
+
+## Render Link -
+https://s73-adityanikam-trimedi-capstone.onrender.com
